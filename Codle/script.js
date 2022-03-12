@@ -22,11 +22,11 @@ function submit(){
 
 //currentguess will be changed
 function checkCorrect(currentGuess){
-    for (var i = 0; i < 5;i++){
-        if(currentGuess[i] = todayArray[i]){
+    for (var i = 0; i < 5; i++){
+        if(currentGuess[i] == todayArray[i]){
             document.getElementById(curId).style+="background-color: green;"
         }
-        else if(wordBank.includes(guessWord)){
+        else if(todayArray.includes(currentGuess[i])){
             document.getElementById(curId).style+="background-color: yellow;"
         }
         else {
