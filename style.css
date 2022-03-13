@@ -1,0 +1,292 @@
+body{
+    text-align: center;
+    font-size:1.5vw;
+    background-color: black;
+    color: white;
+    background-image: url('https://wallpaperaccess.com/full/5591829.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*For the Keyboard*/
+.button {
+    width:35px;
+    height:45px;
+    margin-bottom: .6vh;
+    border-radius: 0.808vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 3vh;
+    cursor: pointer;
+    border:none;
+}
+
+@media screen and (max-width: 400px) {
+    .button{
+        width: 30px;
+    }
+    #Enter{
+        width: 60px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #Enter{
+        width: 60px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .button{
+        width: 24px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .button{
+        width: 20px;
+    }
+    td{
+        width: 30px;
+    }
+}
+
+
+/*For instruction button*/
+/*.instructions {
+    border-radius: 50%;
+
+    width:3.724vw;
+    height:3.724vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 3.231vh;
+    cursor: pointer;
+
+    position: absolute;
+    left: 0.931vw;
+    top: .75vh;
+}*/
+.instructions {
+    border-radius: 30px;
+
+    width:40px;
+    height:40px;
+    margin-bottom: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.resetWord {
+    border-radius: 30px;
+
+    width:200px;
+    height:40px;
+    margin-bottom: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    margin: auto;
+    border: 4px solid rgba(0,0,0,0.1);
+    background-color: #F8F0E3;
+    border-radius: 10px;
+    color:#3a3b3c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.231vh;
+    text-align: center;
+    
+}
+
+td{
+    min-width: 43px;
+    height: 43px;
+    row-gap: 20px;
+    column-gap: 5px;
+
+}
+
+
+
+#overlay {
+    text-align: auto;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0 , 0.5);
+    z-index: 99;
+    cursor: pointer;
+}
+
+#text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/*body{
+    text-align: center;
+    font-size:1.5vw;
+    background-color: black;
+    color: white;
+    background-image: url('https://wallpaperaccess.com/full/5591829.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+
+.button {
+    width:35px;
+    height:45px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 20px;
+    cursor: pointer;
+    border:none;
+}
+
+.button2 {
+    width:80px;
+    height:45px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 20px;
+    cursor: pointer;
+    border:none;
+}
+.instructions {
+    border-radius: 30px;
+
+    width:40px;
+    height:40px;
+    margin-bottom: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.resetWord {
+    border-radius: 30px;
+
+    width:200px;
+    height:40px;
+    margin-bottom: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F8F0E3;
+    color:#3a3b3c;
+    font-size: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+h2{
+    position: absolute;
+    left: 1000px;
+    top: 1000px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    margin: auto;
+    border: 4px solid rgba(0,0,0,0.1);
+    background-color: #F8F0E3;   
+    border-radius: 10px;
+    color:#3a3b3c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+td{
+    min-width: 43px;
+    height: 43px;
+    row-gap: 20px;
+    column-gap: 5px;
+
+}
+
+
+
+#overlay {
+    text-align: auto;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0 , 0.5);
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+*/
