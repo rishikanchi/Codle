@@ -204,12 +204,13 @@ function displayOutputWin(){
     else {
         output +=`
         <br><br><br><br><br><br><br>
+        <fieldset style="display: inline-block; background-color: white; border-radius: 10px; border-color: Black; border-width: thick ">
         <span class = 'newClass'>⤫</span>
         <h1>🎉CONGRATS!🎉</h1>
         You took
         ${row}
         tries to get the answer!
-        `    
+        `           
         //Citation: http://xahlee.info/comp/unicode_emoticons.html
     }
 
